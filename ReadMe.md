@@ -10,6 +10,8 @@ If python support is not configured:
 1. Open Visual Studio
 2. Under Tools dropdown, click on ‘Get tools and features’ to open the Visual Studio Installer.
 3. The installer presents you with a list of workloads, which are groups of related options for specific development areas. For Python, select the Python development workload and select Install:
+![alt text](https://github.com/Fizza-Rubab/ClubElectionPortal/blob/master/Python%20Requirements.png?raw=true)
+
  
 ## Steps for Running the Project
 1. Download the zip file from Github.

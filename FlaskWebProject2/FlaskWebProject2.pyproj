@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3fbd3c9b-db3e-4138-a15f-54b85e4dfeab</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>FlaskWebProject2</Name>
+    <RootNamespace>FlaskWebProject2</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+    <Compile Include="FlaskWebProject2\__init__.py" />
+    <Compile Include="FlaskWebProject2\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FlaskWebProject2\" />
+    <Folder Include="FlaskWebProject2\static\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\css\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\fonts\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\img\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\img\ClubImages\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\img\faces\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\js\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\sass\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\sass\lbd\" />
+    <Folder Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\" />
+    <Folder Include="FlaskWebProject2\static\assets\" />
+    <Folder Include="FlaskWebProject2\static\assets\css\" />
+    <Folder Include="FlaskWebProject2\static\assets\fonts\" />
+    <Folder Include="FlaskWebProject2\static\assets\img\" />
+    <Folder Include="FlaskWebProject2\static\assets\img\faces\" />
+    <Folder Include="FlaskWebProject2\static\assets\img\ClubImages\" />
+    <Folder Include="FlaskWebProject2\static\assets\img\plots\" />
+    <Folder Include="FlaskWebProject2\static\assets\img\plots\Entrepreneurship Club\" />
+    <Folder Include="FlaskWebProject2\static\assets\img\plots\Habib Adventure Club\" />
+    <Folder Include="FlaskWebProject2\static\assets\img\plots\Serve Club for People\" />
+    <Folder Include="FlaskWebProject2\static\assets\img\plots\Raqs Club\" />
+    <Folder Include="FlaskWebProject2\static\assets\img\StudentImages\" />
+    <Folder Include="FlaskWebProject2\static\assets\js\" />
+    <Folder Include="FlaskWebProject2\static\assets\sass\" />
+    <Folder Include="FlaskWebProject2\static\assets\sass\lbd\" />
+    <Folder Include="FlaskWebProject2\static\assets\sass\lbd\mixins\" />
+    <Folder Include="FlaskWebProject2\static\Login\" />
+    <Folder Include="FlaskWebProject2\static\Login\css\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\css\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\fonts\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\iconic\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\iconic\css\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\iconic\fonts\" />
+    <Folder Include="FlaskWebProject2\static\Login\fonts\poppins\" />
+    <Folder Include="FlaskWebProject2\static\Login\images\" />
+    <Folder Include="FlaskWebProject2\static\Login\images\icons\" />
+    <Folder Include="FlaskWebProject2\static\Login\js\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\animate\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\animsition\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\animsition\css\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\animsition\js\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\bootstrap\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\bootstrap\js\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\countdowntime\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\css-hamburgers\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\daterangepicker\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\jquery\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\perfect-scrollbar\" />
+    <Folder Include="FlaskWebProject2\static\Login\vendor\select2\" />
+    <Folder Include="FlaskWebProject2\static\StudentModule\" />
+    <Folder Include="FlaskWebProject2\static\StudentModule\css\" />
+    <Folder Include="FlaskWebProject2\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlaskWebProject2\static\adminassets\css\animate.min.css" />
+    <Content Include="FlaskWebProject2\static\adminassets\css\bootstrap.min.css" />
+    <Content Include="FlaskWebProject2\static\adminassets\css\demo.css" />
+    <Content Include="FlaskWebProject2\static\adminassets\css\light-bootstrap-dashboard.css" />
+    <Content Include="FlaskWebProject2\static\adminassets\css\pe-icon-7-stroke.css" />
+    <Content Include="FlaskWebProject2\static\adminassets\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="FlaskWebProject2\static\adminassets\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="FlaskWebProject2\static\adminassets\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="FlaskWebProject2\static\adminassets\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\Cl.png" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\ClubImages\Entreuprenership.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\ClubImages\HAC.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\ClubImages\Multiverse.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\ClubImages\Raqs.png" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\ClubImages\Serve.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\default-avatar.png" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\delete-pngrepo-com.png" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\edit.png" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\Elections_Web_Banner_v2-01-scaled.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\faces\face-0.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\faces\face-1.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\faces\face-2.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\faces\face-3.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\faces\face-4.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\faces\face-5.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\faces\face-6.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\faces\face-7.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\faces\tim_vector.jpe" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\favicon.ico" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\full-screen-image-3.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\hes.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\loading-bubbles.svg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\mask.png" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\new_logo.png" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\sidebar-1.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\sidebar-2.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\sidebar-3.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\sidebar-4.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\sidebar-5.jpg" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\tim_80x80.png" />
+    <Content Include="FlaskWebProject2\static\adminassets\img\vote-icon.gif" />
+    <Content Include="FlaskWebProject2\static\adminassets\js\bootstrap-notify.js" />
+    <Content Include="FlaskWebProject2\static\adminassets\js\bootstrap-select.js" />
+    <Content Include="FlaskWebProject2\static\adminassets\js\bootstrap.min.js" />
+    <Content Include="FlaskWebProject2\static\adminassets\js\chartist.min.js" />
+    <Content Include="FlaskWebProject2\static\adminassets\js\demo.js" />
+    <Content Include="FlaskWebProject2\static\adminassets\js\JavaScript.js" />
+    <Content Include="FlaskWebProject2\static\adminassets\js\jquery.3.2.1.min.js" />
+    <Content Include="FlaskWebProject2\static\adminassets\js\light-bootstrap-dashboard.js" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_buttons.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_cards.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_chartist.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_icons.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_inputs.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_labels.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_morphing-buttons.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_navbars.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_social-buttons.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_tabs.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_transparency.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\mixins\_vendor-prefixes.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_alerts.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_buttons.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_cards.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_chartist.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_checkbox-radio-switch.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_dropdown.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_footers.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_inputs.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_misc.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_mixins.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_navbars.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_responsive.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_sidebar-and-main-panel.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_tables.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_typography.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\lbd\_variables.scss" />
+    <Content Include="FlaskWebProject2\static\adminassets\sass\light-bootstrap-dashboard.scss" />
+    <Content Include="FlaskWebProject2\static\assets\css\animate.min.css" />
+    <Content Include="FlaskWebProject2\static\assets\css\bootstrap.min.css" />
+    <Content Include="FlaskWebProject2\static\assets\css\demo.css" />
+    <Content Include="FlaskWebProject2\static\assets\css\light-bootstrap-dashboard.css" />
+    <Content Include="FlaskWebProject2\static\assets\css\pe-icon-7-stroke.css" />
+    <Content Include="FlaskWebProject2\static\assets\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="FlaskWebProject2\static\assets\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="FlaskWebProject2\static\assets\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="FlaskWebProject2\static\assets\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="FlaskWebProject2\static\assets\img\102-512.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\1589689.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\943048.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\candi.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\Cl.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\ClubImages\empty.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\ClubImages\Entreuprenership.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\ClubImages\HAC.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\ClubImages\Multiverse.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\ClubImages\Raqs.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\ClubImages\Serve.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\default-avatar.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\delete-pngrepo-com.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\edit.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\Elections_Web_Banner_v2-01-scaled.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\faces\face-0.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\faces\face-1.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\faces\face-2.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\faces\face-3.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\faces\face-4.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\faces\face-5.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\faces\face-6.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\faces\face-7.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\faces\tim_vector.jpe" />
+    <Content Include="FlaskWebProject2\static\assets\img\favicon.ico" />
+    <Content Include="FlaskWebProject2\static\assets\img\full-screen-image-3.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\GS.PNG" />
+    <Content Include="FlaskWebProject2\static\assets\img\hes.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\images.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\loading-bubbles.svg" />
+    <Content Include="FlaskWebProject2\static\assets\img\future.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\mask.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\new_logo.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\President.PNG" />
+    <Content Include="FlaskWebProject2\static\assets\img\sidebar-1.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\sidebar-2.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\sidebar-3.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\sidebar-4.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\sidebar-5.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Abraham Lincoln.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Adnan Asif.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Batool Ahmed.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Dwayne Johnson.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Elizabeth Windsor.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\empty.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Fizza Rubab.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Hermione Granger.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Jane Doe.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\John Doe.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Mubaraka Shabbir.PNG" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Ruhama Naeem.jpeg" />
+    <Content Include="FlaskWebProject2\static\assets\img\StudentImages\Shahid Afridi.jpg" />
+    <Content Include="FlaskWebProject2\static\assets\img\T.PNG" />
+    <Content Include="FlaskWebProject2\static\assets\img\tim_80x80.png" />
+    <Content Include="FlaskWebProject2\static\assets\img\vote-icon.gif" />
+    <Content Include="FlaskWebProject2\static\assets\img\VP.PNG" />
+    <Content Include="FlaskWebProject2\static\assets\js\bootstrap-notify.js" />
+    <Content Include="FlaskWebProject2\static\assets\js\bootstrap-select.js" />
+    <Content Include="FlaskWebProject2\static\assets\js\bootstrap.min.js" />
+    <Content Include="FlaskWebProject2\static\assets\js\chartist.min.js" />
+    <Content Include="FlaskWebProject2\static\assets\js\demo.js" />
+    <Content Include="FlaskWebProject2\static\assets\js\JavaScript.js" />
+    <Content Include="FlaskWebProject2\static\assets\js\jquery.3.2.1.min.js" />
+    <Content Include="FlaskWebProject2\static\assets\js\light-bootstrap-dashboard.js" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_buttons.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_cards.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_chartist.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_icons.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_inputs.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_labels.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_morphing-buttons.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_navbars.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_social-buttons.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_tabs.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_transparency.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\mixins\_vendor-prefixes.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_alerts.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_buttons.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_cards.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_chartist.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_checkbox-radio-switch.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_dropdown.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_footers.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_inputs.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_misc.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_mixins.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_navbars.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_responsive.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_sidebar-and-main-panel.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_tables.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_typography.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\lbd\_variables.scss" />
+    <Content Include="FlaskWebProject2\static\assets\sass\light-bootstrap-dashboard.scss" />
+    <Content Include="FlaskWebProject2\static\Login\css\main.css" />
+    <Content Include="FlaskWebProject2\static\Login\css\util.css" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="FlaskWebProject2\static\Login\images\1.jpg" />
+    <Content Include="FlaskWebProject2\static\Login\images\12.jpg" />
+    <Content Include="FlaskWebProject2\static\Login\images\123.jpg" />
+    <Content Include="FlaskWebProject2\static\Login\images\bg-01.jpg" />
+    <Content Include="FlaskWebProject2\static\Login\images\HU.png" />
+    <Content Include="FlaskWebProject2\static\Login\images\icons\1.jpg" />
+    <Content Include="FlaskWebProject2\static\Login\images\icons\favicon.ico" />
+    <Content Include="FlaskWebProject2\static\Login\js\main.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\animate\animate.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\animsition\css\animsition.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\animsition\css\animsition.min.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\animsition\js\animsition.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\animsition\js\animsition.min.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\js\popper.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\countdowntime\countdowntime.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\daterangepicker\moment.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\daterangepicker\moment.min.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\select2\select2.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\select2\select2.js" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\select2\select2.min.css" />
+    <Content Include="FlaskWebProject2\static\Login\vendor\select2\select2.min.js" />
+    <Content Include="FlaskWebProject2\static\StudentModule\css\animate.min.css" />
+    <Content Include="FlaskWebProject2\static\StudentModule\css\bootstrap.min.css" />
+    <Content Include="FlaskWebProject2\static\StudentModule\css\demo.css" />
+    <Content Include="FlaskWebProject2\static\StudentModule\css\light-bootstrap-dashboard.css" />
+    <Content Include="FlaskWebProject2\static\StudentModule\css\pe-icon-7-stroke.css" />
+    <Content Include="FlaskWebProject2\templates\add_club.html" />
+    <Content Include="FlaskWebProject2\templates\add_election.html" />
+    <Content Include="FlaskWebProject2\templates\add_member.html" />
+    <Content Include="FlaskWebProject2\templates\candidate.html" />
+    <Content Include="FlaskWebProject2\templates\candidate_approved.html" />
+    <Content Include="FlaskWebProject2\templates\candidate_display.html" />
+    <Content Include="FlaskWebProject2\templates\club.html" />
+    <Content Include="FlaskWebProject2\templates\current_stats.html" />
+    <Content Include="FlaskWebProject2\templates\dashboard.html" />
+    <Content Include="FlaskWebProject2\templates\edit_club.html" />
+    <Content Include="FlaskWebProject2\templates\election.html" />
+    <Content Include="FlaskWebProject2\templates\home.html" />
+    <Content Include="FlaskWebProject2\templates\joinClub.html" />
+    <Content Include="FlaskWebProject2\templates\login.html" />
+    <Content Include="FlaskWebProject2\templates\register.html" />
+    <Content Include="FlaskWebProject2\templates\showResults.html" />
+    <Content Include="FlaskWebProject2\templates\stats.html" />
+    <Content Include="FlaskWebProject2\templates\view_club.html" />
+    <Content Include="FlaskWebProject2\templates\view_election.html" />
+    <Content Include="FlaskWebProject2\templates\view_members.html" />
+    <Content Include="FlaskWebProject2\templates\candidate_approval.html" />
+    <Content Include="FlaskWebProject2\templates\vote.html" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

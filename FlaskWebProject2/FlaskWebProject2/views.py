@@ -23,11 +23,13 @@ class LoginForm(FlaskForm):
 
 app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 ######################################################################################################333
-
+check=False
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    global check
     form = LoginForm()
+    check=False
     if form.validate_on_submit():
         with pyodbc.connect(conx_string) as conx:
             cursor = conx.cursor()
@@ -36,10 +38,12 @@ def login():
             if data[0]>0:
                 cursor.execute('SELECT Student_ID FROM Student WHERE Email=?', form.email.data)
                 StudentID=cursor.fetchone()[0]
+                check=True
                 flash('You have been logged in!', 'success')
                 return redirect(url_for('home',  st_id = StudentID))
             elif form.email.data == 'life@admin.habib.edu.pk' and form.password.data == 'password':
                 flash('You have been logged in!', 'success')
+                check=True
                 return redirect(url_for('dashboard'))
             else:
                 flash('Login Unsuccessful. Please check username and password', 'danger')
@@ -51,11 +55,17 @@ def login():
 @app.route('/dashboard')
 def dashboard():
     """Renders the home page."""
-    return render_template(
+    
+    global check
+    if check:
+        return render_template(
         'dashboard.html',
         title='Dashboard Page',
         year=datetime.now().year,
     )
+    else:
+        return redirect(url_for('login'))
+
 
 @app.route('/election')
 def election():
@@ -365,25 +375,30 @@ def showResults(ClubID):
 
 @app.route('/home_<st_id>')
 def home(st_id):
-    with pyodbc.connect(conx_string) as conx:
-       query1 = "SELECT Club.Club_ID, Monogram, [Club Name] FROM Club, Membership WHERE Club.Club_ID = Membership.Club_ID AND Membership.Student_ID = ?"
-       cursor = conx.cursor()
-       cursor.execute(query1, st_id)
-       #Query = pd.read_sql_query(query1, conx)
-       #Clubs = pd.DataFrame(Query, columns = ['ClubID', 'ClubName', 'Monogram'])
+    
+    global check
+    if check:
+        with pyodbc.connect(conx_string) as conx:
+           query1 = "SELECT Club.Club_ID, Monogram, [Club Name] FROM Club, Membership WHERE Club.Club_ID = Membership.Club_ID AND Membership.Student_ID = ?"
+           cursor = conx.cursor()
+           cursor.execute(query1, st_id)
+           #Query = pd.read_sql_query(query1, conx)
+           #Clubs = pd.DataFrame(Query, columns = ['ClubID', 'ClubName', 'Monogram'])
 
-       Clubs = cursor.fetchall()
-       if len(Clubs)==1:
-           Clubs.extend([['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'],['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'],['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add']])
-       if len(Clubs)==1:
-           Clubs.extend(['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'],['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'])
-       if (len(Clubs))==2:
-           Clubs.append(['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'])
-       cursor.execute('SELECT Cast(PollingStartDate as date) FROM Election where ElectionYear=DATEPART(year, getdate())')
-       ED = cursor.fetchone()[0]
-       cursor.execute("SELECT [Name], Image from Student Where Student_ID = ?", st_id)
-       name = cursor.fetchone()
-       return render_template('home.html', title = "Home", Clubs = Clubs, ed = ED, st_id = st_id, name = name)
+           Clubs = cursor.fetchall()
+           if len(Clubs)==1:
+               Clubs.extend([['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'],['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'],['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add']])
+           if len(Clubs)==1:
+               Clubs.extend(['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'],['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'])
+           if (len(Clubs))==2:
+               Clubs.append(['-1','static/assets/img/ClubImages/empty.png','No Clubs to Add'])
+           cursor.execute('SELECT Cast(PollingStartDate as date) FROM Election where ElectionYear=DATEPART(year, getdate())+1')
+           ED = cursor.fetchone()[0]
+           cursor.execute("SELECT [Name], Image from Student Where Student_ID = ?", st_id)
+           name = cursor.fetchone()
+           return render_template('home.html', title = "Home", Clubs = Clubs, ed = ED, st_id = st_id, name = name)
+    else:
+        return redirect(url_for('login'))
 
 @app.route('/home_<st_id>_club_<club_id>')
 def club(club_id, st_id):
@@ -479,4 +494,5 @@ def register( st_id, club_id,):
         cursor.execute("SELECT [Name] from Student Where Student_ID = ?", st_id)
         name = cursor.fetchone()[0]
         return render_template('register.html', clubid= club_id, name=name, st_id = st_id)
+
 

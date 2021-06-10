@@ -18,7 +18,7 @@ If python support is not configured:
 1. Download the zip file from Github.
 2. Open the solution (.sln) file in Visual Studio.
 3. Before running the project, use the script provided in the repository to create the [Club Elections] database on MS-SQL server.
-4. Open the views.py file from solution explorer and change the conx string variable and set the name of your local server in place of the server written. Change the following:
+4. Open the file views.py from solution explorer and change the conx string variable and set the name of your local server in place of the server written. Change the following:
 
 ```bash
 conx_string = "driver={SQL SERVER}; server=DESKTOP-E9RIB71\SQLEXPRESS; database=Club Elections; trusted_connection=YES;"
